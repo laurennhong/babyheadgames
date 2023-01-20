@@ -1,0 +1,91 @@
+/* 
+color palette >>>
+red: 9B5C68
+blue: 25283D
+green: 7A918D
+pale pink: EFD6D2
+mustard: C2A94F
+cream: FFF9E1
+grey: 908A87
+black: 221D1D
+
+fonts >>>
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Quicksand', sans-serif;
+
+export illustrations as svgs
+*/
+
+body{
+    background: rgb(144,138,135);
+    background: radial-gradient(circle, rgba(144,138,135,1) 0%, rgba(34,29,29,1) 100%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex:3 1;
+    align-items: center;
+}
+
+.heroimage {
+    display:flex;
+    justify-content: center;
+}
+
+#tagline {
+    font-family: 'Padyakke Expanded One', cursive;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+}
+
+main article ul  {
+    list-style-type:none;
+    padding-left: 0;
+    line-height: 3;
+}
+
+main article ul li a {
+    text-decoration: none;
+    color: #221D1D;
+    background-color: #FFF9E1;
+    padding: 7px 20px;
+    border-radius:15px;
+    box-shadow: 5px 5px 10px #221D1D;
+}
+
+article {
+    text-align:center;
+    padding-left:80px;
+    padding-right:80px;
+}
+
+h2 {
+    font-family: 'Padyakke Expanded One', cursive;
+    color:#FFF9E1;
+    text-shadow: 2px 2px 4px #221D1D;
+}
+.column {
+    background-image: url("");
+}
+
+/* .column2 {
+    background-image: url("");
+}
+
+.column3 {
+    background-image: url("");
+} */
+
+footer  {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #221D1D;
+}
