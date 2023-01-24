@@ -32,15 +32,25 @@ header{
 .heroimage {
     display:flex;
     justify-content: center;
+    padding-top: 10px;
+}
+.heroimage img {
+    padding: 15px;
+}
+
+.heroimage img.hover {
+
 }
 
 #tagline {
     font-family: 'Padyakke Expanded One', cursive;
+    padding: none;
 }
 
 main {
     display:flex;
     justify-content: center;
+    padding:none;
 }
 
 main article ul  {
