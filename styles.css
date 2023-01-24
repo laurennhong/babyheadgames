@@ -32,18 +32,22 @@ header{
 .heroimage {
     display:flex;
     justify-content: center;
+    align-items: center;
     padding-top: 10px;
 }
 .heroimage img {
     padding: 15px;
 }
 
-.heroimage img.hover {
-
+img.hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
 }
 
 #tagline {
     font-family: 'Padyakke Expanded One', cursive;
+    color:#FFF9E1;
+    text-shadow: 2px 2px 4px #221D1D;
     padding: none;
 }
 
@@ -79,17 +83,20 @@ h2 {
     color:#FFF9E1;
     text-shadow: 2px 2px 4px #221D1D;
 }
-.column {
-    background-image: url("");
+#column1 {
+    background-image: url("images/teddy1.png");
+    background-size: cover;
 }
 
-/* .column2 {
-    background-image: url("");
+#column2 {
+    background-image: url("images/teddy2.png");
+    background-size: cover;
 }
 
-.column3 {
-    background-image: url("");
-} */
+#column3 {
+    background-image: url("images/teddy3.png");
+    background-size: cover;
+} 
 
 footer  {
     text-align: center;
