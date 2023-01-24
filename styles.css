@@ -39,11 +39,6 @@ header{
     padding: 15px;
 }
 
-img.hover {
-    animation-name: spin;
-    animation-duration: 5000ms;
-}
-
 #tagline {
     font-family: 'Padyakke Expanded One', cursive;
     color:#FFF9E1;
@@ -55,6 +50,9 @@ main {
     display:flex;
     justify-content: center;
     padding:none;
+}
+main article {
+    height: 650px;
 }
 
 main article ul  {
@@ -83,22 +81,36 @@ h2 {
     color:#FFF9E1;
     text-shadow: 2px 2px 4px #221D1D;
 }
+#column1 #column2 #column3 {
+    height: 800px;
+}
+
 #column1 {
     background-image: url("images/teddy1.png");
-    background-size: cover;
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: none;
 }
 
 #column2 {
     background-image: url("images/teddy2.png");
-    background-size: cover;
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:none;
 }
 
 #column3 {
     background-image: url("images/teddy3.png");
-    background-size: cover;
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right:none;
 } 
 
 footer  {
+    padding: 30px;
     text-align: center;
 }
 
