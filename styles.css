@@ -61,20 +61,17 @@ header{
     transform: scale(1.3);
 }
 
-#tagline {
+#banner {
     font-family: 'Padyakke Expanded One', cursive;
     color:#FFF9E1;
     text-shadow: 2px 2px 4px #221D1D;
-    padding: none;
 }
 
 main {
     display:flex;
     justify-content: center;
-    padding:none;
 }
 main article {
-    padding:none;
     height:625px;
 }
 
@@ -107,7 +104,6 @@ h2 {
     background-size: 400px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: none;
 }
 
 #column1 {
