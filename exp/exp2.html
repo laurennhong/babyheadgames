@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        body{
+            margin: 50px;
+            background-color: #EFD6D2;
+        }
+        h1{
+            font-size: 48px;
+        }
+        p{
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>experiment 2</h1>
+    <p id="introInput"></p>
+    <p id="input"></p>
+    <img src = "../images/tama.gif" alt="tama" width="200">
+    <script>
+        var userName = prompt('what is your name?');
+        var tamagotchi = prompt('name your tamagotchi');
+        var food = ['cupcake', 'carrot', 'skittle', 'cookie', 'sandwhich'];
+
+        function introduction(name, tama) {
+            var greeting;
+            if (name == null || name == '') {
+                greeting = "error! please enter name.";
+            } else {
+                greeting = `hello ${name}! here is your tamagatchi, ${tama}!`;
+            }
+            return greeting;
+        }
+
+        function randomInt (min,max) {
+            return Math.floor((max-min+1) * Math.random()) + min;
+        }
+
+        function feed(name,tama,treat) {
+            var randomFood = treat[randomInt(0,treat.length-1)];
+            var ouput = (`you fed ${tama} a ${randomFood}!`);
+
+            document.getElementById('introInput').innerHTML = introduction(name,tama);
+            document.getElementById('input').innerHTML = ouput
+        }
+
+        feed(userName,tamagotchi,food);
+    </script>
+</body>
+</html>
