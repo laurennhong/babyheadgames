@@ -55,12 +55,12 @@ article {
     background-color: #FFF9E1;
     width: 700px;
     margin:0px auto;
-    padding:50px;
+    padding:90px;
     padding-top:20px;
     border-radius: 20px;
     filter: drop-shadow(2px 2px 10px #221D1D);
     line-height:1.5;
-    font-size:24px;
+    font-size:22px;
 }
 
 p {
@@ -70,12 +70,13 @@ p {
 h2 {
     font-family: 'Padyakke Expanded One', cursive;
     text-align: center;
-    font-size: 48px;
+    font-size: 44px;
 }
 a {
     color:#91918d;
     font-style:oblique;
     font-size:14px;
+    line-height:none;
 }
 
 table {
