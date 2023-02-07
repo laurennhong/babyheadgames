@@ -1,0 +1,66 @@
+/*color palette
+hot pink: #FF6AA1
+fuscia pink: #FA337B
+pale pink: #FEC9F1
+
+fonts
+font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+body {
+    background-color:#FF6AA1
+}
+
+div {
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+
+article {
+    padding-left: 30px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-style:bolder;
+    font-size: 52px;
+    color:white;
+    margin:auto;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    color:white;
+}
+
+form {
+    background-color:#FA337B;
+    border: 2px solid white;
+    border-radius: 24px;
+    color:white;
+    padding:30px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-top:0;
+}
+label {
+   font-family: 'Inter', sans-serif; 
+}
+
+input {
+    background-color: #FEC9F1;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin:10px;
+}
