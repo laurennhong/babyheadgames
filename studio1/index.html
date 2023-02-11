@@ -20,19 +20,21 @@
 
     <main>
         <div id="girlPhone">
-            <!-- <img src="" alt="girly" width="600"> -->
+            <img src="images/phone.gif" alt="girly" width="400">
         </div>
         <article>
             <h1>it's you, not me &#60;3</h1>
             <h2>just breakup with them girl</h2>
 
-            <form>
-                <p>dear...</p>
+            <form id="letterform">
+                <p>Dear...</p>
                 <label for="name">name of person</label><input type="text" id="name" name="name"><br>
                 <label for="time">amount of time</label><input type="text" id="time" name="time"><br>
                 <label for="adjP">adjective (postive)</label><input type="text" id="adjP" name="adjP"><br>
                 <label for="object">object</label><input type="text" id="object" name="object"><br>
                 <label for="urName">your name</label><input type="text" id="urName" name="urName">
+                <br>
+                <input type='submit' value='submit'>
             </form>
         </article>
     </main>
@@ -42,7 +44,11 @@
         <img src="images/hearts.png" alt="heartsTop" width="1600">
     </div>
 
-    <script>
-    </script>
+    <section id="overlay" class="hidden">
+        <article>
+            <p id="letter"></p>
+            <button class="close">close</button>
+        </article>
+    </section>
 </body>
 </html>

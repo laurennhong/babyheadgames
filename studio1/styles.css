@@ -21,10 +21,14 @@ main {
     display: flex;
     justify-content: center;
     padding:10px;
+    padding-right:40px;
 }
 
 article {
-    padding-left: 30px;
+    padding-left: 40px;
+}
+#girlPhone {
+    padding-right: 50px;
 }
 
 h1{
@@ -46,6 +50,7 @@ form {
     border-radius: 24px;
     color:white;
     padding:30px;
+    width:400px;
 }
 
 p {
@@ -54,12 +59,64 @@ p {
     margin-top:0;
 }
 label {
-   font-family: 'Inter', sans-serif; 
+    display:inline-block;
+    width:150px;
+    margin:0;
+    font-family: 'Inter', sans-serif; 
 }
 
-input {
+input, button {
     background-color: #FEC9F1;
     border: 2px solid white;
     border-radius: 10px;
     margin:10px;
+    width:220px;;
+    font-family: 'Playfair Display', serif;
+}
+input[type=submit], .close {
+    font-family: 'Inter', sans-serif; 
+    width:80px;
+    padding:5px;
+    margin:0;
+    margin-top:5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#overlay {
+    position:absolute;
+    background-color: #FF6AA1;
+    background-image: url(images/hearts2.png);
+    background-repeat: repeat;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #FA337B;
+    border: 2px solid white;
+    border-radius: 24px;
+    color:white;
+    padding:50px;
+    width:50vw;
+    height:90vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay article p {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    line-height: 1.7;
 }
