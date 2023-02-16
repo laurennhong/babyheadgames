@@ -63,6 +63,14 @@ article {
     font-size:22px;
 }
 
+figcaption, a {
+    color:#91918d;
+    font-style:oblique;
+    font-size:14px;
+    text-align: center;
+    line-height:none;
+}
+
 p {
     text-indent: 60px;
 }
@@ -71,12 +79,6 @@ h2 {
     font-family: 'Padyakke Expanded One', cursive;
     text-align: center;
     font-size: 44px;
-}
-a {
-    color:#91918d;
-    font-style:oblique;
-    font-size:14px;
-    line-height:none;
 }
 
 table {
@@ -102,6 +104,9 @@ td:hover {
     padding:0;
 }
 
-img {
+img, video {
     margin:auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #221D1D;
 }
