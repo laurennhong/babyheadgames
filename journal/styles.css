@@ -109,3 +109,9 @@ img, video {
     display: flex;
     justify-content: center;
 }
+
+#games {
+    display: flex;
+    flex-direction: row;
+    padding-bottom:10px;
+}
