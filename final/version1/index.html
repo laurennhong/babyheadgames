@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <title>Game On!</title>
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <div id="winningmessage"></div>
+    <section>
+        <div>
+            <img src="images/girl1Intro.gif" alt="player1" width="150" id="girl1">
+            <div id="score"></div>
+        </div>
+        <div id="titlecolumn">
+            <div id="gamecontrol">
+                <button id="volume"><img src="images/volume.png" alt="volume" width="20"></button>
+                <button id="volumeOff"><img src="images/offvolume.png" alt="volume" width="20"></button>
+                <h2 id="gametitle">Play<br>with<br>Me</h2>
+                <p>There are two creepy twins. One is chosen randomly. First twin rolls the die. Score is added up. If die comes up as a "one", the turn switches to the other twin. After each roll, they can either roll again, or they can pass to the other twin. The first twin to get 30 points or higher wins.</p> 
+                <p>Oh, and if you roll snake eyes, AKA two 1's, your current score gets zeroed out!</p>
+                <button id="startgame">start</button>
+            </div>
+            <div id="actions"></div>
+            <div id="game"></div>
+        </div>
+        <div>
+            <img src="images/girl2Intro.gif" alt="player2" width="150" id="girl2">
+            <div id="score2"></div>
+        </div>
+    </section>
+    
+</body>
+</html>
