@@ -45,7 +45,7 @@
 		console.log(gameData.index);
 
 		gameControl.innerHTML = '<h2 id="started">The Game Has Started</h2>';
-		gameControl.innerHTML += '<button id="quit">wanna quit?</button>';
+		gameControl.innerHTML += '<button id="quit">quit game</button>';
 
 		girl2.src="images/girl2On.png";
 		girl1.src="images/girl1On.png";
@@ -66,7 +66,7 @@
 	});
 
 	function setUpTurn() {
-		game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+		game.innerHTML = `<p>${gameData.players[gameData.index]} roll dice</p>`;
 		actionArea.innerHTML = '<button id="roll">ROLL THE DICE</button>';
 		document.getElementById('roll').addEventListener('click', function(){
 
@@ -80,14 +80,14 @@
 		actionArea.innerHTML = '';
 		gameData.roll1 = Math.floor(Math.random() * 6) + 1; //using ceil could result in a zero
 		gameData.roll2 = Math.floor(Math.random() * 6) + 1;
-		game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+		game.innerHTML = `<p>${gameData.players[gameData.index]} roll dice</p>`;
 		game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> 
 							<img src="${gameData.dice[gameData.roll2-1]}">`;
 		gameData.rollSum = gameData.roll1 + gameData.roll2;
 
 		// if two 1's are rolled...
 		if( gameData.rollSum === 2 ){ 
-			game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
+			game.innerHTML += '<p>UH OH! SNAKE EYES!</p>';
 			gameData.score[gameData.index] = 0;
 			//on and off player 1 and 2
 			if (gameData.index) {
@@ -116,7 +116,7 @@
 			} 
 			// player is switching
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-			game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to  ${
+			game.innerHTML += `<p>Rolled a 1, switching to  ${
 				gameData.players[gameData.index]
 			}</p>`;
 			setTimeout(setUpTurn, 2000);

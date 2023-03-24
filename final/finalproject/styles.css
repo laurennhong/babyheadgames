@@ -47,6 +47,11 @@ h2 {
     margin:0;
 }
 
+#introQ {
+    font-style: bolder;
+    font-size:18px;
+}
+
 p {
     font-family: 'Sono', sans-serif;
     font-size: 12px;

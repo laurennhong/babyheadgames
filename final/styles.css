@@ -62,7 +62,7 @@ article {
     background-color: #FFF9E1;
     width: 500px;
     margin:0px auto;
-    padding:70px;
+    padding:50px;
     padding-top:20px;
     border-radius: 20px;
     filter: drop-shadow(2px 2px 10px #221D1D);
@@ -77,4 +77,21 @@ p {
 #summary {
     text-align:center;
     text-indent: 0;
+}
+
+#userimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img {
+    padding:10px;
+}
+
+.userA {
+    color:rgb(147, 27, 27)
+}
+
+.userB {
+    color:rgb(31, 99, 40)
 }
